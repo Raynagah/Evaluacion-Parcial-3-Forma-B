@@ -5,7 +5,7 @@
 #Importamos las funciones necesarias
 import time;
 
-
+import Funciones as funcion
 
 coleccion=[]
 #Definir variables
@@ -30,14 +30,20 @@ while bandera_menu:
         #Utilizando la opción ingresada por el usuario, llamamos a la función correspondiente.
         if opcion==1:
                 print();
+                funcion.funcion_agregar(coleccion)
         elif opcion==2:
                 print("\n");
+                funcion.ver_productos(coleccion)
         elif opcion==3:
                 print();
+                funcion.modificar_producto(coleccion)
         elif opcion==4:
                 print();
+                funcion.eliminar_producto(coleccion)
         elif opcion==5:
                 print();
+                nombre=input("Ingrese el nombre que desea en el documento: ")
+                funcion.guardar_archivo(coleccion,nombre)
         elif opcion==6:
             print("Saliendo del programa...");
             time.sleep(1);

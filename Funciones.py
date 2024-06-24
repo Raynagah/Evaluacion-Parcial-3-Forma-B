@@ -55,6 +55,7 @@ def funcion_agregar(lista):
     #Guardar datos ingresados en un diccionario y agregarlos a una lista
     producto = {"codigo": codigo, "nombre": nombre, "cantidad": cantidad, "precio": precio }
     lista.append(producto)
+    print(f"El producto {producto["nombre"]} ha sido agregado con éxito.")
 #Función modificar producto
 def modificar_producto(coleccion):
     flag1 = True
