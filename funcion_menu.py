@@ -1,21 +1,12 @@
-"""
-El menú debe tener las siguientes opciones:
-o Agregar un producto.
-o Ver todos los productos.
-o Modificar un producto.
-o Eliminar un producto.
-o Guardar colección en un archivo.
-o Salir del programa
-"""
+#Importamos las funciones necesarias
 import time;
-import Funciones as funcion
-
-
-lista = []
+import ver_productos as funcion;
+coleccion=[]
+#Definir variables
 bandera_menu = True;
 bandera_opcion = True;
-print("\n¡Bienvenido a nuestra Tienda!\n");
-
+print("¡Bienvenido a nuestra Tienda!\n");
+#Realizamos un menú para que el usuario pueda utilizar las distintas funciones que hemos creado.
 while bandera_menu:
     print("Seleccione una de las siguientes opciones:\n");
     print("1.Agregar un producto");
@@ -23,17 +14,19 @@ while bandera_menu:
     print("3.Modificar un producto");
     print("4.Eliminar un producto");
     print("5.Guardar colección en un archivo");
-    print("6.Salir del programa\n");
+    print("6.Salir del programa");
+    #Validamos que la opción ingresada por el usuario sea numérica.
     try:
         opcion=int(input("Elija una opción: "));
     except:
         print("La opción ingresada no es válida, intentelo nuevamente\n");
     else:
+        #Utilizando la opción ingresada por el usuario, llamamos a la función correspondiente.
         if opcion==1:
                 funcion.funcion_agregar(lista)
                 print();
         elif opcion==2:
-                funcion.ver_productos();
+                funcion.ver_productos(coleccion);
                 print("\n");
         elif opcion==3:
                 print();
