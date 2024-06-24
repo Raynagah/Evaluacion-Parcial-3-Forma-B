@@ -2,7 +2,10 @@
 
 
 def ver_productos(coleccion):
-    print("Seleccionó listar todos los productos");
+    print("Seleccionó listar todos los productos\n");
+    print("------------------------------------------------------------------------");
+    print("|     CODIGO     |     NOMBRE     |     CANTIDAD     |      PRECIO     |");
+    print("------------------------------------------------------------------------");
     for i in range(len(coleccion)):
         producto=coleccion[i];
         print(f"{producto["codigo"]} | {producto["nombre"]} | {producto["cantidad"]} | {producto["precio"]} |");

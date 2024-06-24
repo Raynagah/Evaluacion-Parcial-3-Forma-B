@@ -20,7 +20,7 @@ def guardar_archivo(coleccion, nombreArchivo):
 
 def eliminar_producto(coleccion,codigo):
     #Coleccion formato coleccion=[{}]
-
+    #
     for i in range(len(coleccion)):
         producto=coleccion[i]
         if producto["codigo"]==codigo:
