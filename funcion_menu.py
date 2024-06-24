@@ -8,7 +8,9 @@ o Guardar colección en un archivo.
 o Salir del programa
 """
 import time;
+import funcion_agregar as funcion
 
+lista = []
 bandera_menu = True;
 bandera_opcion = True;
 print("¡Bienvenido a nuestra Tienda!\n");
@@ -20,13 +22,14 @@ while bandera_menu:
     print("3.Modificar un producto");
     print("4.Eliminar un producto");
     print("5.Guardar colección en un archivo");
-    print("6.Salir del programa");
+    print("6.Salir del programa\n");
     try:
         opcion=int(input("Elija una opción: "));
     except:
         print("La opción ingresada no es válida, intentelo nuevamente\n");
     else:
         if opcion==1:
+                funcion.funcion_agregar(lista)
                 print();
         elif opcion==2:
                 print();
