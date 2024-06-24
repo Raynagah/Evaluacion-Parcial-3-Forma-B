@@ -1,5 +1,6 @@
-lista=[23,54,24,4]
 
-print(lista[1])
-lista.pop(1)
-print(lista[1])
+
+existe=True
+lista=[{"codigo":23,"nombre":"car"},{"codigo":235,"nombre":"carl"},{"codigo":234,"nombre":"carlo"}]
+codigo=235
+
