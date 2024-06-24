@@ -1,2 +1,0 @@
-Codigo,Nombre,Cantidad,Precio
-1234,carlos,0,1234
