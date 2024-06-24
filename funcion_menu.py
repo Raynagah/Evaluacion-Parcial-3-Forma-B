@@ -8,7 +8,7 @@ o Guardar colección en un archivo.
 o Salir del programa
 """
 import time;
-
+import ver_productos as funcion;
 bandera_menu = True;
 bandera_opcion = True;
 print("¡Bienvenido a nuestra Tienda!\n");
@@ -29,7 +29,8 @@ while bandera_menu:
         if opcion==1:
                 print();
         elif opcion==2:
-                print();
+                funcion.ver_productos();
+                print("\n");
         elif opcion==3:
                 print();
         elif opcion==4:
