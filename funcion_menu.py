@@ -8,12 +8,13 @@ o Guardar colección en un archivo.
 o Salir del programa
 """
 import time;
-import funcion_agregar as funcion
+import Funciones as funcion
+
 
 lista = []
 bandera_menu = True;
 bandera_opcion = True;
-print("¡Bienvenido a nuestra Tienda!\n");
+print("\n¡Bienvenido a nuestra Tienda!\n");
 
 while bandera_menu:
     print("Seleccione una de las siguientes opciones:\n");
