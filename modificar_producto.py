@@ -8,19 +8,29 @@ def modificar_producto(coleccion):
     for i in range(len(coleccion)):
         producto=coleccion[i];
         print(f"Producto {i+1}: {producto}");
+    productoEncontrado={}
     while bandera_menu_modificacion:
         #Validamos el código ingresado por el usuario.
         try:
-            opcion_modificacion=int(input("Ingrese el código del producto el cual desee modificar: "));
+            codigo=int(input("Ingrese el código del producto el cual desee modificar: "));
         except:
-            if opcion_modificacion not in coleccion["codigo"]:
+            for i in range(len(coleccion)):
+                producto = coleccion[i]
+                if codigo==producto["nombre"]:
+                    productoEncontrado=producto
+            if productoEncontrado not in coleccion:
                 print("El producto seleccionado no existe, intentelo nuevamente");
         else:
             #
             for i in range(len(coleccion)):
                 producto=coleccion[i];
-                if opcion_modificacion == producto["codigo"]:
+                if codigo == producto["codigo"]:
                     print("Ya puede modificar el producto");
+                    nombre=input
+
+
+
+
                     bandera_menu_modificacion=False;
                     
 
