@@ -6,10 +6,10 @@ def funcion_agregar(lista):
     #Asignacion de banderas en True
     flag = True
     flag1 = True
-    flag2 = True
-
+    flag2 = True    
+    flag3=True
     print("\nUsted selecciono la opcion de agregar productos\n")
-
+    prodEncontrado={}
     #Pedir datos al usuario con 3 Ciclos WHILE que contienen (TRY, EXCEPT) para corregir que el usuario ingrese datos numericos
     while flag == True:
         try:
@@ -17,6 +17,21 @@ def funcion_agregar(lista):
         except:
             print("\nEl codigo debe ser númerico. Vuelva a intentarlo...\n") 
         else:
+
+            while flag3==True:
+                for i in range(len(lista)):
+                    prod=lista[i]
+                    if prod["codigo"]==codigo:
+                        prodEncontrado=prod
+
+                if prodEncontrado in lista:
+                    print("El codigo ingresado ya existe, vuelva a intentarlo...")
+                    codigo=int(input("Ingrese el codigo del producto"))
+                else:
+                    flag3=False
+                
+
+            
             flag = False
 
     nombre = input("Ingrese el nombre del producto: ")
