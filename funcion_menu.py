@@ -32,7 +32,8 @@ while bandera_menu:
                 funcion.funcion_agregar(lista)
                 print();
         elif opcion==2:
-                print();
+                funcion.ver_productos();
+                print("\n");
         elif opcion==3:
                 print();
         elif opcion==4:
